@@ -14,42 +14,44 @@ apply control. The elements implemented in Simulink are shown below:
 
 ### Switch
 
-<p align="center">
-    <img src="/figures/switch_slx.png">
-</p>
+<img src="/figures/switch_slx.png">
+
 
 ### Schmitt
 
-<p align="center">
-    <img src="/figures/schmitt_slx.png">
-</p>
+
+<img src="/figures/schmitt_slx.png">
+
 
 ## Switch Results
 
 The outputs in the phase space of the switch look like the following, using an initial state of [1.5 rad, 0 rad/s]':
 
-<p align="center">
-    <img src="/figures/switch_phase_portrait.png" style="height:50%">
+<img src="/figures/switch_phase_portrait.png" style="height:50%">
 
 
 <img src="/figures/switch_dth_t.png" style="height:50%">
 
 
 <img src="/figures/switch_th_t.png" style="height:50%">
-</p>
 
 ## Schmitt Trigger Results
 
 The outputs in the phase space of the switch look like the following, using an initial state of [1.5 rad, 0 rad/s]':
 
-<p align="center">
-    <img src="/figures/schmitt_phase_portrait.png" style="height:50%">
+<img src="/figures/schmitt_phase_portrait.png" style="height:50%">
 
 
 <img src="/figures/schmitt_dth_t.png" style="height:50%">
 
 
 <img src="/figures/schmitt_th_t.png" style="height:50%">
-</p>
 
 In th above, it can be seen that the Schmitt Trigger exhibits the expected behavior, reaching its convergence limit at the boundary box near equilibrium. Likewise, the switch exhibits the expected behavior of converging towards equilibrium, and if the simulation were run longer it would asymptotically approach equililbrium.
+
+## Spacecraft Attitude Control Simulation
+
+The spacecraft attitude control simulation is implemented using quaternion-based full-state feedback (FSFB), with the complex parts of the quaternion making and the absolute angular velocity comprising the state: [q1, q2, q3, w1, w2, w3]'. The simulink diagram for this simulation is as follows:
+
+
+<img src="/figures/acs_slx.png">
