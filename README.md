@@ -53,5 +53,17 @@ In th above, it can be seen that the Schmitt Trigger exhibits the expected behav
 
 The spacecraft attitude control simulation is implemented using quaternion-based full-state feedback (FSFB), with the complex parts of the quaternion making and the absolute angular velocity comprising the state: [q1, q2, q3, w1, w2, w3]'. The simulink diagram for this simulation is as follows:
 
-
 <img src="/figures/acs_slx.png">
+
+As seen above, the combination of which RCS thrusters to use is written as a linear allocation problem which is solved by using the MATLAB linprog() function in-the-loop.
+
+The simulation results are as following, demonstrating successful control using bang-bang actuated RCS thrusters:
+
+### Angular Velocity
+<img src="/figures/acs_w.png">
+
+### Body-to-ECI Quaternion
+<img src="/figures/acs_quat.png">
+
+### Torque Comparison
+<img src="/figures/acs_final.png">
