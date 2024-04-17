@@ -28,22 +28,12 @@ apply control. The elements implemented in Simulink are shown below:
 
 The outputs in the phase space of the switch look like the following, using an initial state of [1.5 rad, 0 rad/s]':
 
-<div class="row">
-  <div class="column">
-    <img src="/figures/switch_phase_portrait.png" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="/figures/switch_dth_t.png" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="/figures/switch_th_t.png" style="width:100%">
-  </div>
-</div>
-
-
-
 <p align="center">
     <img src="/figures/switch_phase_portrait.png">
-    <img src="/figures/switch_phase_portrait.png">
-    <img src="/figures/switch_th_t.png">
-</ps>
+
+
+<img src="/figures/switch_dth_t.png">
+
+
+<img src="/figures/switch_th_t.png">
+</p>
