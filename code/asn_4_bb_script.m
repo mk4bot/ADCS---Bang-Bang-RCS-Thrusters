@@ -24,38 +24,40 @@ hold on, grid on
 plot3(swich.theta, swich.theta_dot, swich.tout, 'b')
 xlabel("\theta")
 ylabel("d \theta")
-title("switch phase plane")
+zlabel("t")
+title("switch phase space")
 
 figure()
 hold on, grid on
 plot3(schmitt.theta, schmitt.theta_dot, schmitt.tout, 'r')
 xlabel("\theta")
 ylabel("d \theta")
-title("schmitt phase plane")
+zlabel("t")
+title("Schmitt Trigger phase space")
 
 % schmitt trigger convergence time iterations
 
-tau = linspace(1,10);
-for k = 1:length(tau)
-    tau_schmitt = tau(k);
-    out_k = sim("asn_4_bb_schmitt.slx", 500);
-    theta = out_k.theta;
-    tout = out_k.tout;
-    
-    % compute convergence times
-    indices = find(theta>0.2);
-    t_conv_index = indices(end);
-    t_c(k) = tout(t_conv_index);
-
-end
-
-% plot iterations
-figure()
-grid on
-plot(tau, t_c)
-xlabel("/tau")
-ylabel("convergence time")
-title("2% convergence time")
+% tau = linspace(1,10);
+% for k = 1:length(tau)
+%     tau_schmitt = tau(k);
+%     out_k = sim("asn_4_bb_schmitt.slx", 500);
+%     theta = out_k.theta;
+%     tout = out_k.tout;
+% 
+%     % compute convergence times
+%     indices = find(theta>0.2);
+%     t_conv_index = indices(end);
+%     t_c(k) = tout(t_conv_index);
+% 
+% end
+% 
+% % plot iterations
+% figure()
+% grid on
+% plot(tau, t_c)
+% xlabel("/tau")
+% ylabel("convergence time")
+% title("2% convergence time")
 
 %% problem 3
 eul_i = [42 -16 23];
