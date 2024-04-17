@@ -30,10 +30,6 @@ The outputs in the phase space of the switch look like the following, using an i
 
 <p align="center">
     <img src="/figures/switch_phase_portrait.png">
-
-
-<img src="/figures/switch_dth_t.png">
-
-
-<img src="/figures/switch_th_t.png">
-</p>
+    <img src="/figures/switch_dth_t.png">
+    <img src="/figures/switch_th_t.png">
+</ps>
