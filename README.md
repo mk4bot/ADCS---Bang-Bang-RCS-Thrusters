@@ -14,20 +14,26 @@ apply control. The elements implemented in Simulink are shown below:
 
 ### Switch
 
-<img src="/figures/switch_slx.png" align="center">
+<p align="center">
+    <img src="/figures/switch_slx.png">
+</p>
 
 ### Schmitt
 
-<img src="/figures/schmitt_slx.png" align="center">
+<p align="center">
+    <img src="/figures/schmitt_slx.png">
+</p>
 
 ## Switch Results
 
 The outputs in the phase space of the switch look like the following, using an initial state of [1.5 rad, 0 rad/s]':
 
-<img src="/figures/switch_phase_portrait.png" align="center">
+<p align="center">
+    <img src="/figures/switch_phase_portrait.png">
 
 
-<img src="/figures/switch_dth_t.png" align="center">
+<img src="/figures/switch_dth_t.png">
 
 
-<img src="/figures/switch_th_t.png" align="center">
+<img src="/figures/switch_th_t.png">
+</p>
