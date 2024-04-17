@@ -101,9 +101,8 @@ hold on, grid on
 plot(acs.w_b_ECI)
 xlabel("time [s]")
 ylabel("w [rad/s]")
-legend("w_x", "w_y", "w_z")
 title("absolute w")
-
+legend("")
 
 % q_b_ECI
 figure()
@@ -120,7 +119,7 @@ figure()
 hold on, grid on
 plot(acs.T_sc, color=[0 0 1 0.8])
 plot(acs.T_c, 'r', linewidth=2)
+xlabel("time [s]")
 plot(acs.schmitt_out, 'g')
 xlabel("time [s]")
-legend("Torque applied","","", "Torque commanded","","", "Schmitt Trigger output")
-title("Commanded torque, Applied torque, Schmitt output")
+title("commanded torque, applied torque, schmitt output")
