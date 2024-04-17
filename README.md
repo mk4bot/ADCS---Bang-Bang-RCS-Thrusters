@@ -37,3 +37,17 @@ The outputs in the phase space of the switch look like the following, using an i
 
 <img src="/figures/switch_th_t.png">
 </p>
+
+## Schmitt Trigger Results
+
+The outputs in the phase space of the switch look like the following, using an initial state of [1.5 rad, 0 rad/s]':
+
+<p align="center">
+    <img src="/figures/schmitt_phase_portrait.png">
+
+
+<img src="/figures/schmitt_dth_t.png">
+
+
+<img src="/figures/schmitt_th_t.png">
+</p>
